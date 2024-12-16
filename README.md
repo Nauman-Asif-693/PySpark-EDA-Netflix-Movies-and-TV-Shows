@@ -31,6 +31,18 @@ The file used for this Analysis was the latter one because it contains details a
 
 ## Setup Instructions
 1. Go [jdk.java.net/archive/](https://jdk.java.net/archive/) and download OpenJDK 17.0.2
-  [image](https://github.com/user-attachments/assets/71de9561-761a-4579-9f1a-23c0466e25d7)
-
-3. 
+<img src = "images/Screenshot 2024-12-16 173101.png">
+2. Extract the zip file and move it to C:\Java
+3. Download latest Apache Spark release. [spark.apache.org/downloads](https://spark.apache.org/downloads.html)
+4. The latest Spark version is selected by default. At the time of writing, the latest version is Spark 3.5.3 for Hadoop 3.3
+5. Click the spark-3.5.3-bin-hadoop3.tgz download link.
+<img src = "images/">
+7. Select a location from a list of mirror servers to begin the download.
+<img src = "images/">
+8. Create a new Spark folder in the root of the C: drive using the following command:
+   ```bash
+   cd \ && mkdir Spark
+   ```
+   ```bash
+   docker cp -L netflix_titles_eda.py spark-master:/opt/bitnami/spark/netflix_eda.py
+   ```
